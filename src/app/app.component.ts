@@ -8,7 +8,7 @@ import {
 
 @Component({
   selector: 'clp-root',
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [RouterOutlet, TranslatePipe, TranslateDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
