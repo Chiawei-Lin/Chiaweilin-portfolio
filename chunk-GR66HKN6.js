@@ -1,0 +1,1 @@
+import{Fa as n,Ga as a,Ja as p,ua as o}from"./chunk-NPYY2YBH.js";var s=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=o({type:e,selectors:[["clp-about"]],decls:2,vars:0,template:function(t,m){t&1&&(n(0,"p"),p(1,"about works!"),a())},encapsulation:2})};export{s as AboutComponent};
