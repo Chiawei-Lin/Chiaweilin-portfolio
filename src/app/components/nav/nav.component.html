@@ -1,1 +1,61 @@
-<p>nav works!</p>
+<nav class="p-4">
+    <div class="row m-0 justify-content-between">
+        <div class="col-6">
+            <a href="/">
+                {{translationConcat('LOGO') | translate}}
+            </a>
+        </div>
+
+        <div class="col-6 d-flex justify-content-end">
+            <ul>
+                <li>
+                    <a [routerLink]="['/home']">
+                        {{translationConcat('HOME') | translate}}
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/projects']">
+                        {{translationConcat('PROJECTS') | translate}}
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/about']">
+                        {{translationConcat('ABOUT') | translate}}
+                    </a>
+                </li>
+                <li>
+                    <a role="button" (click)="languageToggle()">
+                        {{translateService.currentLang === 'en' ? '中' : 'En'}}
+                    </a>
+                </li>
+            </ul>
+
+            <clp-burger-menu (burgerClick)="burgerClick()" [(toggled)]="mobileMenuToggled"></clp-burger-menu>
+        </div>
+    </div>
+</nav>
+
+<div class="menu" [ngClass]="{'toggled':mobileMenuToggled}">
+    <ul>
+        <li>
+            <a [routerLink]="['/home']" (click)="mobileMenuToggled = false">
+                {{translationConcat('HOME') | translate}}
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/projects']" (click)="mobileMenuToggled = false">
+                {{translationConcat('PROJECTS') | translate}}
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/about']" (click)="mobileMenuToggled = false">
+                {{translationConcat('ABOUT') | translate}}
+            </a>
+        </li>
+        <li>
+            <a role="button" (click)="languageToggle()">
+                {{translateService.currentLang === 'en' ? '中' : 'En'}}
+            </a>
+        </li>
+    </ul>
+</div>

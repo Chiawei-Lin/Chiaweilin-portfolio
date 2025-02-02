@@ -1,3 +1,8 @@
 {
-    
+    "NAV": {
+        "LOGO": "C.Lin",
+        "HOME": "Home",
+        "PROJECTS": "Projects",
+        "ABOUT": "About"
+    }
 }
