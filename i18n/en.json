@@ -4,5 +4,8 @@
         "HOME": "Home",
         "PROJECTS": "Projects",
         "ABOUT": "About"
+    },
+    "FOOTER":{
+        "CONTACT_ME":"Contact Me"
     }
 }

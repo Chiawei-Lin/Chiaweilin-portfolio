@@ -4,5 +4,8 @@
         "HOME": "家",
         "PROJECTS": "專案",
         "ABOUT": "關於"
+    },
+    "FOOTER":{
+        "CONTACT_ME":"聯絡我"
     }
 }
