@@ -2,21 +2,22 @@
     <div class="row m-0 p-4">
         <div class="col-6">
             <h4>
-                Contact Me
+                {{translationConcat('CONTACT_ME') | translate}}
             </h4>
             <h6>
                 {{'chiaweilin28@gmail.com'}}
             </h6>
         </div>
         <div class="col-6 d-flex justify-content-end align-items-end">
-            <img class="social" src="images/footer/linkedIn.png" alt="Linkedin">
-            <img class="social" src="images/footer/Instagram.png" alt="home-img">
-            <img class="social" src="images/footer/youtube.png" alt="">
+            <a role="button" (click)="toLink('https://www.linkedin.com')">
+                <img class="social" src="images/footer/linkedin.png" target="_blank" alt="Linkedin_icon">
+            </a>
+            <a role="button" (click)="toLink('https://www.instagram.com')">
+                <img class="social" src="images/footer/instagram.png" target="_blank" alt="Instagram_icon">
+            </a>
+            <a role="button" (click)="toLink('https://www.youtube.com')">
+                <img class="social" src="images/footer/youtube.png" target="_blank" alt="Youtube_icon">
+            </a>
         </div>
-        <div class="col-auto d-flex align-items-end">
-        </div>
-    </div>
-    <div class="row justify-content-between m-0">
-        
     </div>
 </footer>
