@@ -15,5 +15,10 @@
         "THREE_DIMENSINAL_ANIMATION": "3d Animations",
         "VIDEO_PRODUCTION": "Video Production",
         "CLIENT_WORK": "Client Work"
+    },
+    "PROJECT": {
+        "PROJECT_MEMBERS": "Project Members",
+        "STYLEFRAME": "Styleframe",
+        "PROCESS": "Process"
     }
 }

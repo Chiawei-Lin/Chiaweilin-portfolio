@@ -15,5 +15,10 @@
         "THREE_DIMENSINAL_ANIMATION": "3D動畫",
         "VIDEO_PRODUCTION": "影片製作",
         "CLIENT_WORK": "客戶工作"
+    },
+    "PROJECT": {
+        "PROJECT_MEMBERS": "專案成員",
+        "STYLEFRAME": "風格框架",
+        "PROCESS": "過程"
     }
 }
