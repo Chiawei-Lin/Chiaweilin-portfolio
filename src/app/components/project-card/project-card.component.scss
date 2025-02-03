@@ -1,0 +1,12 @@
+.project-card {
+    background-color: #D9D9D9;
+    aspect-ratio: 397 / 223;
+    display: block;
+
+    img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

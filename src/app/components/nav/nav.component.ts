@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import { AbstractComponent } from '../../models/abstract-component';
+import { AbstractComponent } from '../../models/abstract-component.base';
 import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
 import { NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';

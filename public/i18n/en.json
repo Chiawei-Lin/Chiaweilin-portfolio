@@ -5,7 +5,15 @@
         "PROJECTS": "Projects",
         "ABOUT": "About"
     },
-    "FOOTER":{
-        "CONTACT_ME":"Contact Me"
+    "FOOTER": {
+        "CONTACT_ME": "Contact Me"
+    },
+    "PROJECT_FILTERS": {
+        "ALL": "All",
+        "MOTION_GRAPHICS": "Motion Graphics",
+        "TWO_DIMENSINAL_ANIMATION": "2d Animations",
+        "THREE_DIMENSINAL_ANIMATION": "3d Animations",
+        "VIDEO_PRODUCTION": "Video Production",
+        "CLIENT_WORK": "Client Work"
     }
 }

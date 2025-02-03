@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AbstractComponent } from '../../models/abstract-component';
+import { AbstractComponent } from '../../models/abstract-component.base';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({

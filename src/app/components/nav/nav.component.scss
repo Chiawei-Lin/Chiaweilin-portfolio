@@ -1,9 +1,4 @@
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-
     a {
         text-decoration: none;
         color: var(--bs-body-color);
@@ -28,6 +23,7 @@ nav {
 .menu {
     display: block;
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,6 +46,7 @@ nav {
 
         li {
             margin: 18px 0;
+
             a {
                 text-decoration: none;
                 color: var(--bs-body-color);
@@ -89,7 +86,19 @@ nav {
             display: none;
         }
     }
+
     .menu {
         display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        background-color: #EEEBDC;
     }
 }
