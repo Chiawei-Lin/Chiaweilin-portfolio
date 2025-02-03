@@ -1,0 +1,1 @@
+import{Fa as n,Ga as s,Ja as c,ua as o}from"./chunk-RBOIGBZI.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["clp-projects"]],decls:2,vars:0,template:function(e,i){e&1&&(n(0,"p"),c(1,"projects works!"),s())},encapsulation:2})};export{p as ProjectsComponent};
