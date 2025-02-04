@@ -20,5 +20,21 @@
         "PROJECT_MEMBERS": "Project Members",
         "STYLEFRAME": "Styleframe",
         "PROCESS": "Process"
+    },
+    "ABOUT": {
+        "INTRODUCTION": {
+            "TITLE": "",
+            "DESCRIPTION": ""
+        },
+        "SKILLS": {
+            "TITLE": ""
+        },
+        "TECHNOLOGY": {
+            "TITLE": ""
+        },
+        "ME_FIGURE": {
+            "TITLE": "",
+            "SUBTEXT": ""
+        }
     }
 }
