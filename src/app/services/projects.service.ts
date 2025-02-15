@@ -8,7 +8,7 @@ import { map } from 'rxjs';
   providedIn: 'root'
 })
 export class ProjectsService {
-  private url: string = '/data/projects.json'
+  private url: string = 'data/projects.json'
 
   constructor (private httpClient: HttpClient) { }
 

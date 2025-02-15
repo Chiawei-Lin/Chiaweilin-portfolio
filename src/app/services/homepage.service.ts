@@ -5,7 +5,7 @@ import { Homepage } from '../models/homepage.model';
   providedIn: 'root'
 })
 export class HomepageService {
-  private url: string = '/data/homepage.json'
+  private url: string = 'data/homepage.json'
 
   constructor (private httpClient: HttpClient) { }
 
