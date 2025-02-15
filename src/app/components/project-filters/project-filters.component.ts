@@ -29,8 +29,10 @@ export class ProjectFiltersComponent extends AbstractComponent {
   }
 
   filter (categoryType: CategoryTypes | 'all') {
-    this.selectedFilter = categoryType;
-    this.projects = this.projectsService.getProjects(categoryType);
-    this.projectsChange.emit(this.projects);
+    this.projectsService.getProjects(categoryType).subscribe(projects => {
+      this.selectedFilter = categoryType;
+      this.projects = projects
+      this.projectsChange.emit(this.projects);
+    })
   }
 }

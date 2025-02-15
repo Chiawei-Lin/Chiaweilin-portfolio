@@ -26,7 +26,9 @@ export class ProjectComponent extends AbstractComponent implements OnInit {
   ngOnInit (): void {
     this.activatedRoute.paramMap.subscribe(data => {
       const id = Number(data.get('id'));
-      this.project = this.projectsService.getProjectById(id);
+      this.projectsService.getProjectById(id).subscribe(project => {
+        this.project = project;
+      });
     })
   }
 }

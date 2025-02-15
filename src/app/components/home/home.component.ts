@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { HomepageService } from '../../services/homepage.service';
 
 @Component({
   selector: 'clp-home',
@@ -7,9 +8,13 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   url?: SafeResourceUrl;
-  constructor (private _sanitizer: DomSanitizer) {
-    this.url = this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/MsROL4Kf8QY?si=y3acn_0RYUSbIbbW');
+  constructor (private _sanitizer: DomSanitizer, private homepageService: HomepageService) { }
+
+  ngOnInit (): void {
+    this.homepageService.getHomepage().subscribe(result => {
+      this.url = this._sanitizer.bypassSecurityTrustResourceUrl(result.mainVideo);
+    })
   }
 }
