@@ -1,0 +1,19 @@
+<div class="skills-list">
+    <div class="icon">
+        <img src="images/about/drawn-star-1.png" alt="drawn-star">
+    </div>
+    <div class="list">
+        <h2>
+            <strong>
+                Skills
+            </strong>
+        </h2>
+        <ul>
+            @for(skill of skills; track skill.id){
+            <li>
+                {{skill.name[translateService.currentLang]}}
+            </li>
+            }
+        </ul>
+    </div>
+</div>

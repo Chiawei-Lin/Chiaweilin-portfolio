@@ -1,0 +1,41 @@
+.about-chiawei {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+
+    .text-area {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    img {
+        position: absolute;
+        right: 38px;
+        top: 50px;
+        height: 441px;
+        width: 506.02px;
+        pointer-events: none;
+    }
+
+    .figure-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .figure {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        transform: translate(-50%,-50%);
+        display: block;
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+    }
+
+    .figure-wrapper {
+        position: relative;
+        
+    }
+}

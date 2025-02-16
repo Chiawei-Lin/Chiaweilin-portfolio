@@ -1,0 +1,24 @@
+.skills-list {
+    display: flex;
+
+    .icon{
+        height: 44px;
+
+        img{
+            aspect-ratio: 1/1;
+            height: 100%;
+        }
+    }
+
+    .list {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin: 0;
+            }
+        }
+    }
+}
