@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "name": {
+      "en": "After Effects",
+      "zh": "後效"
+    }
+  },
+  {
+    "id": 1,
+    "name": {
+      "en": "Premiere Pro",
+      "zh": "首映專業版"
+    }
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "Illustrator",
+      "zh": "插畫家"
+    }
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Photoshop",
+      "zh": "照片商店"
+    }
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Cinema 4D",
+      "zh": "電影4D"
+    }
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Blender",
+      "zh": "混合器"
+    }
+  }
+]
