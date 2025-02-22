@@ -10,7 +10,7 @@ import { map } from 'rxjs';
 export class ProjectsService {
   private url: string = 'data/projects.json'
 
-  constructor (private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   getProjectById = (id: number) => this.getProjects('all')
     .pipe(map(data => {

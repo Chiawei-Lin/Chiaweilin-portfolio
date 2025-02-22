@@ -1,64 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Skill } from '../../models/skill.model';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { SkillsService } from '../../services/skills.service';
+import { AbstractComponent } from '../../models/abstract-component.base';
 
 @Component({
   selector: 'clp-about-skills-list',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './about-skills-list.component.html',
   styleUrl: './about-skills-list.component.scss'
 })
-export class AboutSkillsListComponent {
-  skills: Skill[] = [
-    {
-      id: 0,
-      name: {
-        en: 'skill1',
-        zh: 'skill1 zh'
-      }
-    },
-    {
-      id: 1,
-      name: {
-        en: 'skill2',
-        zh: 'skill2 zh'
-      }
-    },
-    {
-      id: 2,
-      name: {
-        en: 'skill2',
-        zh: 'skill2 zh'
-      }
-    },
-    {
-      id: 3,
-      name: {
-        en: 'skill3',
-        zh: 'skill3 zh'
-      }
-    },
-    {
-      id: 4,
-      name: {
-        en: 'skill4',
-        zh: 'skill4 zh'
-      }
-    },
-    {
-      id: 5,
-      name: {
-        en: 'skill5',
-        zh: 'skill5 zh'
-      }
-    }
-  ]
+export class AboutSkillsListComponent extends AbstractComponent implements OnInit {
+  skills?: Skill[];
 
-  /**
-   *
-   */
-  constructor (public translateService: TranslateService) {
+  constructor(public translateService: TranslateService,
+    private skillsService: SkillsService) {
+    super({
+      translationPrefix: 'ABOUT.SKILLS'
+    })
+  }
 
-
+  ngOnInit() {
+    this.skillsService.getSkillsList().subscribe(skills => {
+      this.skills = skills
+    })
   }
 }

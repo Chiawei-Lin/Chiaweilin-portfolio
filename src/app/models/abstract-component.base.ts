@@ -1,13 +1,13 @@
 export class AbstractComponent {
-    translationPrefix!: string;
+  translationPrefix!: string;
 
-    constructor (context: {
-        translationPrefix: string
-    }) {
-        this.translationPrefix = context.translationPrefix;
-    }
+  constructor(context: {
+    translationPrefix: string
+  }) {
+    this.translationPrefix = context.translationPrefix;
+  }
 
-    translationConcat (translationKey: string) {
-        return `${this.translationPrefix}.${translationKey}`
-    }
+  translationConcat(translationKey: string) {
+    return `${this.translationPrefix}.${translationKey}`
+  }
 }
