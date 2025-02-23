@@ -9,7 +9,6 @@ import { Project } from '../../models/project.model';
   selector: 'clp-projects',
   imports: [
     ProjectCardComponent,
-    NgFor,
     ProjectFiltersComponent
   ],
   templateUrl: './projects.component.html',
