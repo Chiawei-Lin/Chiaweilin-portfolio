@@ -30,6 +30,7 @@
     transform: translateY(20px);
     aspect-ratio: 146/138;
     height: 120px;
-    pointer-events: none;
+    z-index:-1;
+    pointer-events:none;
   }
 }
