@@ -32,5 +32,10 @@
     height: 120px;
     z-index:-1;
     pointer-events:none;
+    opacity:.5;
+    @media(min-width:991px){
+    opacity:1;
+    }
+
   }
 }

@@ -31,5 +31,9 @@
     aspect-ratio: 200/174;
     height: 100px;
     pointer-events: none;
+    opacity:.5;
+    @media(min-width:991px){
+    opacity:1;
+    }
   }
 }
