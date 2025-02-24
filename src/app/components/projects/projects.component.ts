@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectCardComponent } from '../project-card/project-card.component';
-import { NgFor } from '@angular/common';
 import { ProjectsService } from '../../services/projects.service';
 import { ProjectFiltersComponent } from "../project-filters/project-filters.component";
 import { Project } from '../../models/project.model';

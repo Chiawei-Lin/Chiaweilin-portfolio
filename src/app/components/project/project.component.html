@@ -43,12 +43,14 @@
             </div>
         </div>
         <div class="row m-0">
-            <div *ngFor="let styleframeImg of this.project?.styleframeImages" class="col-lg-6 col-12 my-3">
+          @for(styleframeImg of project?.styleframeImages; track styleframeImg){
+            <div class="col-lg-6 col-12 my-3">
                 <div class="img-card">
                     <img [src]="styleframeImg" alt="">
                 </div>
             </div>
-        </div>
+          }
+         </div>
     </section>
 
     <section>
@@ -60,11 +62,13 @@
             </div>
         </div>
         <div class="row m-0">
-            <div *ngFor="let processImage of this.project?.processImages" class="col-lg-6 col-12 my-3">
+            @for(processImage of project?.processImages;track processImage){
+            <div class="col-lg-6 col-12 my-3">
                 <div class="img-card">
                     <img [src]="processImage" alt="">
                 </div>
             </div>
+            }
         </div>
     </section>
 

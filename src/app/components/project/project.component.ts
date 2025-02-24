@@ -3,12 +3,11 @@ import { AbstractComponent } from '../../models/abstract-component.base';
 import { ProjectsService } from '../../services/projects.service';
 import { ActivatedRoute } from '@angular/router';
 import { Project } from '../../models/project.model';
-import { NgFor } from '@angular/common';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'clp-project',
-  imports: [NgFor, TranslatePipe],
+  imports: [TranslatePipe],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
