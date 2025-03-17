@@ -36,6 +36,9 @@
               {
                 "input": "node_modules/bootstrap/scss/bootstrap.scss"
               },
+              {
+                "input": "node_modules/bootstrap-icons/font/bootstrap-icons.css"
+              },
               "src/styles.scss"
             ],
             "scripts": [

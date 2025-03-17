@@ -1,84 +1,87 @@
 <div class="project">
-    <section>
-        <div class="row m-0">
-            <div class="col">
-                <div class="img-container mb-4">
-                    <img [src]="project?.mainImg" alt="">
-                </div>
-            </div>
+  <section class="my-4">
+    <clp-project-breadcrumb [project]="project"></clp-project-breadcrumb>
+  </section>
+  <section>
+    <div class="row m-0">
+      <div class="col">
+        <div class="img-container mb-4">
+          <img [src]="project?.mainImg" alt="">
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <div class="row m-0 flex-column">
-            <div class="col">
-                <h2 class="my-1 title">
-                    {{project?.title?.[translateService.currentLang]}}
-                </h2>
-            </div>
+  <section>
+    <div class="row m-0 flex-column">
+      <div class="col">
+        <h2 class="my-1 title">
+          {{project?.title?.[translateService.currentLang]}}
+        </h2>
+      </div>
 
-            <div class="col">
-                <p class="my-1">
-                    {{project?.shortDescription?.[translateService.currentLang]}}
-                </p>
+      <div class="col">
+        <p class="my-1">
+          {{project?.shortDescription?.[translateService.currentLang]}}
+        </p>
 
-                <small class="d-block my-2">
-                    {{project?.longDescription?.[translateService.currentLang]}}
-                </small>
+        <small class="d-block my-2">
+          {{project?.longDescription?.[translateService.currentLang]}}
+        </small>
 
-                <small class="d-block my-2">
-                    {{translationConcat('PROJECT_MEMBERS') | translate}}:
-                    {{project?.projectMembers?.[translateService.currentLang]}}
-                </small>
-            </div>
+        <small class="d-block my-2">
+          {{translationConcat('PROJECT_MEMBERS') | translate}}:
+          {{project?.projectMembers?.[translateService.currentLang]}}
+        </small>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row m-0">
+      <div class="col">
+        <h2 class="title">
+          {{translationConcat('STYLEFRAME') | translate}}
+        </h2>
+      </div>
+    </div>
+    <div class="row m-0">
+      @for(styleframeImg of project?.styleframeImages; track styleframeImg){
+      <div class="col-lg-6 col-12 my-3">
+        <div class="img-card">
+          <img [src]="styleframeImg" alt="">
         </div>
-    </section>
+      </div>
+      }
+    </div>
+  </section>
 
-    <section>
-        <div class="row m-0">
-            <div class="col">
-                <h2 class="title">
-                    {{translationConcat('STYLEFRAME') | translate}}
-                </h2>
-            </div>
+  <section>
+    <div class="row m-0">
+      <div class="col">
+        <h2 class="title">
+          {{translationConcat('PROCESS') | translate}}
+        </h2>
+      </div>
+    </div>
+    <div class="row m-0">
+      @for(processImage of project?.processImages;track processImage){
+      <div class="col-lg-6 col-12 my-3">
+        <div class="img-card">
+          <img [src]="processImage" alt="">
         </div>
-        <div class="row m-0">
-          @for(styleframeImg of project?.styleframeImages; track styleframeImg){
-            <div class="col-lg-6 col-12 my-3">
-                <div class="img-card">
-                    <img [src]="styleframeImg" alt="">
-                </div>
-            </div>
-          }
-         </div>
-    </section>
+      </div>
+      }
+    </div>
+  </section>
 
-    <section>
-        <div class="row m-0">
-            <div class="col">
-                <h2 class="title">
-                    {{translationConcat('PROCESS') | translate}}
-                </h2>
-            </div>
-        </div>
-        <div class="row m-0">
-            @for(processImage of project?.processImages;track processImage){
-            <div class="col-lg-6 col-12 my-3">
-                <div class="img-card">
-                    <img [src]="processImage" alt="">
-                </div>
-            </div>
-            }
-        </div>
-    </section>
-
-    <section>
-        <div class="row m-0">
-            <div class="col">
-                <small class="d-block my-2">
-                    {{project?.processDescription?.[translateService.currentLang]}}
-                </small>
-            </div>
-        </div>
-    </section>
+  <section>
+    <div class="row m-0">
+      <div class="col">
+        <small class="d-block my-2">
+          {{project?.processDescription?.[translateService.currentLang]}}
+        </small>
+      </div>
+    </div>
+  </section>
 </div>

@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+
+  &.selected {
+    cursor: default;
+  }
+
+  &:not(.selected) {
+    opacity: .6;
+
+    font-size: 16px;
+
+    transition: opacity .2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+}
