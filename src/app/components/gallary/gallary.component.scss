@@ -1,0 +1,39 @@
+.gallary {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+
+  .content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1202;
+
+
+    img {
+      max-height: 80vh;
+    }
+
+    .btn {
+      border: none;
+      transition: opacity .2s ease-in-out;
+      opacity: .7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1201;
+    background-color: #0000009d;
+    height: 100%;
+    width: 100%;
+  }
+}

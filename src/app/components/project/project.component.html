@@ -46,11 +46,11 @@
       </div>
     </div>
     <div class="row m-0">
-      @for(styleframeImg of project?.styleframeImages; track styleframeImg){
+      @for(styleframeImg of project?.styleframeImages; track styleframeImg; let index = $index){
       <div class="col-lg-6 col-12 my-3">
-        <div class="img-card">
+        <a role="button" class="img-card" (click)="showStyleframeImages(index)">
           <img [src]="styleframeImg" alt="">
-        </div>
+        </a>
       </div>
       }
     </div>
@@ -65,11 +65,11 @@
       </div>
     </div>
     <div class="row m-0">
-      @for(processImage of project?.processImages;track processImage){
+      @for(processImage of project?.processImages;track processImage; let index = $index){
       <div class="col-lg-6 col-12 my-3">
-        <div class="img-card">
+        <a role="button" class="img-card" (click)="showProcessImages(index)">
           <img [src]="processImage" alt="">
-        </div>
+        </a>
       </div>
       }
     </div>
@@ -85,3 +85,5 @@
     </div>
   </section>
 </div>
+
+<clp-gallary [urls]="gallaryUrls" [(showGallary)]="showGallary" [(index)]="currentGallaryIndex!"></clp-gallary>

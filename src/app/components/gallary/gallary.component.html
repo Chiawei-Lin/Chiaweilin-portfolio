@@ -1,0 +1,20 @@
+@if(showGallary){
+<div class="gallary">
+
+  <div class="content">
+    <!-- <h1 class="text-white"> {{index}}</h1> -->
+    <button class="btn text-light" (click)="decreaseIndex()">
+      <h3 class="d-inline">
+        <i class="bi bi-chevron-left"></i>
+      </h3>
+    </button>
+    <img [src]="currentMediaUrl">
+    <button class="btn text-light" (click)="increaseIndex()">
+      <h3 class="d-inline">
+        <i class="bi bi-chevron-right"></i>
+      </h3>
+    </button>
+  </div>
+  <a role="button" class="overlay" (click)="dismissGallary()"></a>
+</div>
+}

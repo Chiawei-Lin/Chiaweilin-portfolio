@@ -5,23 +5,25 @@ import { ActivatedRoute } from '@angular/router';
 import { Project } from '../../models/project.model';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { ProjectBreadcrumbComponent } from '../project-breadcrumb/project-breadcrumb.component';
+import { GallaryComponent } from '../gallary/gallary.component';
 
 @Component({
   selector: 'clp-project',
-  imports: [TranslatePipe, ProjectBreadcrumbComponent],
+  imports: [TranslatePipe, ProjectBreadcrumbComponent, GallaryComponent],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent extends AbstractComponent implements OnInit {
   project?: Project;
+  showGallary: boolean = false;
+  gallaryUrls?: string[];
+  currentGallaryIndex?: number;
 
   constructor(public translateService: TranslateService, private projectsService: ProjectsService, private activatedRoute: ActivatedRoute) {
     super({
       translationPrefix: 'PROJECT'
     })
   }
-
-
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe(data => {
@@ -30,5 +32,17 @@ export class ProjectComponent extends AbstractComponent implements OnInit {
         this.project = project;
       });
     })
+  }
+
+  showStyleframeImages(index: number) {
+    this.showGallary = true;
+    this.gallaryUrls = this.project?.styleframeImages;
+    this.currentGallaryIndex = index;
+  }
+
+  showProcessImages(index: number) {
+    this.showGallary = true;
+    this.gallaryUrls = this.project?.processImages;
+    this.currentGallaryIndex = index;
   }
 }
