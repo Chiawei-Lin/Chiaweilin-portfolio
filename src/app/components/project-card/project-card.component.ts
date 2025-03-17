@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../../models/project.model';
 import { RouterLink } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'clp-project-card',
@@ -10,4 +11,6 @@ import { RouterLink } from '@angular/router';
 })
 export class ProjectCardComponent {
   @Input() project?: Project;
+
+  constructor(public translateService: TranslateService) { }
 }
