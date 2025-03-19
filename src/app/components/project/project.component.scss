@@ -21,11 +21,11 @@
     aspect-ratio: 397 / 223;
     display: block;
 
-    opacity: .8;
+    opacity: 1;
     transition: opacity .2s ease-in-out;
 
     &:hover {
-      opacity: 1;
+      opacity: .7;
     }
 
     img {
