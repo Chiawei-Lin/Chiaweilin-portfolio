@@ -1,8 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { YoutubeEmbedComponent } from '../youtube-embed/youtube-embed.component';
 
 @Component({
   selector: 'clp-gallary',
-  imports: [],
+  imports: [YoutubeEmbedComponent],
   templateUrl: './gallary.component.html',
   styleUrl: './gallary.component.scss'
 })

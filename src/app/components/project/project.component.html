@@ -6,7 +6,8 @@
     <div class="row m-0">
       <div class="col">
         <div class="img-container mb-4">
-          <img [src]="project?.coverImg" alt="">
+          <!-- <img [src]="project?.coverImg" alt=""> -->
+          <clp-youtube-embed [url]="project?.mainMedia"></clp-youtube-embed>
         </div>
       </div>
     </div>
@@ -71,13 +72,17 @@
     </div>
     <div class="row m-0">
       @for(processImage of project?.processImages;track processImage; let index = $index){
-      @if(!processImage.includes('www.youtube.com')){
       <div class="col-lg-6 col-12 my-3">
         <a role="button" class="img-card" (click)="showProcessImages(index)">
+          @if(!processImage.includes('www.youtube.com')){
           <img [src]="processImage" alt="">
+          } @else {
+          <clp-youtube-embed [url]="processImage"></clp-youtube-embed>
+          }
         </a>
+
       </div>
-      }
+
       }
     </div>
   </section>

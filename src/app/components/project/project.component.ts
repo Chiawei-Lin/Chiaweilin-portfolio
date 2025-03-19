@@ -6,10 +6,11 @@ import { Project } from '../../models/project.model';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { ProjectBreadcrumbComponent } from '../project-breadcrumb/project-breadcrumb.component';
 import { GallaryComponent } from '../gallary/gallary.component';
+import { YoutubeEmbedComponent } from '../youtube-embed/youtube-embed.component';
 
 @Component({
   selector: 'clp-project',
-  imports: [TranslatePipe, ProjectBreadcrumbComponent, GallaryComponent],
+  imports: [TranslatePipe, ProjectBreadcrumbComponent, GallaryComponent, YoutubeEmbedComponent],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
