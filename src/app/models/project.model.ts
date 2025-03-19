@@ -13,4 +13,5 @@ export interface Project {
     processImages: string[];
     processDescription: Dictionary<string>;
     categoryType: CategoryTypes;
+    technologies: string[];
 }
