@@ -4,7 +4,8 @@ import { Dictionary } from "./dictionary.type";
 export interface Project {
     id: number;
     title: Dictionary<string>;
-    mainImg: string;
+    mainMedia: string;
+    coverImg: string;
     shortDescription: Dictionary<string>;
     longDescription: Dictionary<string>;
     projectMembers: Dictionary<string>;
