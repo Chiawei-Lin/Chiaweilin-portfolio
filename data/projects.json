@@ -61,7 +61,7 @@
         "coverImg": "images/projects/clear-moon/cover-img.png",
         "processDescription": {
             "en": "The entire project was crafted using Blender and After Effects, where I experimented with directly importing 3D models into After Effects to create animations and visual effects—a new technical challenge for me. \n During production, I first created the 3D models and materials in Blender, then imported them into After Effects to refine the animation and visual effects. The process came with its challenges. For instance, when 3D models were pre-composed, their 3D functionality was limited. Additionally, combining 3D and 2D animations required special attention to details. One example was ensuring the vine’s path, as it wrapped around the back of the moon, precisely matched the moon’s curvature. To solve this, I used masking techniques to make the scene appear seamless and natural. \n This project is not only a technical experiment but also a heartfelt tribute. Every frame and every detail reflects my deep love and remembrance for my grandmother. ",
-            "zh": "整個作品運用了 Blender 和 After Effects 製作，並嘗試將 3D 模型直接匯入 After Effects 裡進行動畫和特效處理，對我來說也是一次新的技術挑戰。 \n 在製作過程中，我先在 Blender 製作了 3D 模型和材質，接著匯入 After Effects，完成動畫和視覺特效的細節設計。過程中遇到不少挑戰，例如，當 3D 模型被預先合成（pre-compose）後，會喪失一些 3D 的功能。再比如，在結合 3D 和 2D 動畫時，有些細節需要特別注意。像是藤蔓纏繞到月球背後的軌道必須精準貼合月球的弧度，這部分我透過遮罩（mask） 技術來解決，讓畫面看起來更自然。 \n 這部作品不僅是一個技術實驗，更是我情感的寄託。每一個畫面、每一個細節，都飽含了我對阿嬤的深深思念與懷念。"
+            "zh": "整個作品運用了 Blender 和 After Effects 製作，並嘗試將 3D 模型直接匯入 After Effects 裡進行動畫和特效處理，對我來說也是一次新的技術挑戰。 在製作過程中，我先在 Blender 製作了 3D 模型和材質，接著匯入 After Effects，完成動畫和視覺特效的細節設計。過程中遇到不少挑戰，例如，當 3D 模型被預先合成（pre-compose）後，會喪失一些 3D 的功能。再比如，在結合 3D 和 2D 動畫時，有些細節需要特別注意。像是藤蔓纏繞到月球背後的軌道必須精準貼合月球的弧度，這部分我透過遮罩（mask） 技術來解決，讓畫面看起來更自然。 這部作品不僅是一個技術實驗，更是我情感的寄託。每一個畫面、每一個細節，都包含了我對阿嬤的深深思念與懷念。"
         },
         "processImages": [
             "https://www.youtube.com/embed/xyiM8hx_X9c?si=MrhT5jTbbqdJ6hXh",
@@ -696,7 +696,7 @@
             "images/projects/meow-meow-power-drink/process-img-3.png"
         ],
         "styleframeImages": [
-            "images/projects/meow-meow-power-drink/style-frame-img-1.jpg"
+            "images/projects/meow-meow-power-drink/style-frame-img-1.png"
         ],
         "technologies": [
             "Blender",
