@@ -30,10 +30,12 @@
           {{project?.longDescription?.[translateService.currentLang]}}
         </small>
 
-        <small class="d-block my-2">
-          {{translationConcat('PROJECT_MEMBERS') | translate}}:
-          {{project?.projectMembers?.[translateService.currentLang]}}
-        </small>
+        @if(project?.projectMembers){
+          <small class="d-block my-2" >
+            {{translationConcat('PROJECT_MEMBERS') | translate}}:
+            {{project?.projectMembers?.[translateService.currentLang]}}
+          </small>
+        }
       </div>
     </div>
   </section>

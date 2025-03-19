@@ -31,7 +31,7 @@
             </a>
         </li>
         <li>
-            <a role="button" (click)="filter(categoryTypes.ClientWork)" [ngClass]="{'selected': selectedFilter === categoryTypes.MotionGraphics}">
+            <a role="button" (click)="filter(categoryTypes.ClientWork)" [ngClass]="{'selected': selectedFilter === categoryTypes.ClientWork}">
                 <i [ngTemplateOutlet]="dotTemplate"></i>
                 {{translationConcat('CLIENT_WORK') | translate}}
             </a>

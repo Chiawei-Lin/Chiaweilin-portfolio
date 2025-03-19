@@ -18,7 +18,9 @@ export class ProjectsService {
     }));
 
   getProjects = (categoryType: CategoryTypes | 'all') => {
-    return this.httpClient.get<Project[]>(this.url).pipe(map(data => {
+    return this.httpClient.get<Project[]>(this.url).pipe(
+      map(data => data.reverse()),
+      map(data => {
       return categoryType === 'all' ? data : data.filter(project => project.categoryType === (categoryType as unknown as CategoryTypes));
     }))
   }
