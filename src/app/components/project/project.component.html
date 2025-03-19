@@ -5,9 +5,19 @@
   <section>
     <div class="row m-0">
       <div class="col">
-        <div class="img-container mb-4">
-          <!-- <img [src]="project?.coverImg" alt=""> -->
+        <div class="img-container mb-4" [ngClass]="{'img-container-aspected': project?.mainMediaType !== 'instagram'}">
+          @switch(project?.mainMediaType){
+          @case ('image'){
+          <img [src]="project?.mainMedia" alt="">
+          }
+          @case ('youtube') {
           <clp-youtube-embed [url]="project?.mainMedia"></clp-youtube-embed>
+          }
+
+          @case ('instagram') {
+          <clp-instagram-embed [url]="project?.mainMedia"></clp-instagram-embed>
+          }
+          }
         </div>
       </div>
     </div>
@@ -31,10 +41,10 @@
         </small>
 
         @if(project?.projectMembers){
-          <small class="d-block my-2" >
-            {{translationConcat('PROJECT_MEMBERS') | translate}}:
-            {{project?.projectMembers?.[translateService.currentLang]}}
-          </small>
+        <small class="d-block my-2">
+          {{translationConcat('PROJECT_MEMBERS') | translate}}:
+          {{project?.projectMembers?.[translateService.currentLang]}}
+        </small>
         }
       </div>
     </div>

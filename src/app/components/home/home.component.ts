@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { HomepageService } from '../../services/homepage.service';
 import { YoutubeEmbedComponent } from "../youtube-embed/youtube-embed.component";
+import { InstagramEmbedComponent } from "../instagram-embed/instagram-embed.component";
 
 @Component({
   selector: 'clp-home',
-  imports: [YoutubeEmbedComponent],
+  imports: [YoutubeEmbedComponent, InstagramEmbedComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

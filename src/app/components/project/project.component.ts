@@ -7,10 +7,12 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { ProjectBreadcrumbComponent } from '../project-breadcrumb/project-breadcrumb.component';
 import { GallaryComponent } from '../gallary/gallary.component';
 import { YoutubeEmbedComponent } from '../youtube-embed/youtube-embed.component';
+import { InstagramEmbedComponent } from '../instagram-embed/instagram-embed.component';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'clp-project',
-  imports: [TranslatePipe, ProjectBreadcrumbComponent, GallaryComponent, YoutubeEmbedComponent],
+  imports: [TranslatePipe, ProjectBreadcrumbComponent, GallaryComponent, YoutubeEmbedComponent, InstagramEmbedComponent, NgClass],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })

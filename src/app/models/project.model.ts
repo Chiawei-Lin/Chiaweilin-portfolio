@@ -14,4 +14,5 @@ export interface Project {
     processDescription: Dictionary<string>;
     categoryType: CategoryTypes;
     technologies: string[];
+    mainMediaType: 'youtube' | 'instagram' | 'image';
 }
