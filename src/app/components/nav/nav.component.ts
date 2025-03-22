@@ -4,6 +4,7 @@ import { AbstractComponent } from '../../models/abstract-component.base';
 import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
 import { NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'clp-nav',
@@ -14,7 +15,7 @@ import { RouterLink } from '@angular/router';
 export class NavComponent extends AbstractComponent {
   mobileMenuToggled: boolean = false;
 
-  constructor (public translateService: TranslateService) {
+  constructor (public translateService: TranslateService, public themeService: ThemeService) {
     super({
       translationPrefix: 'NAV'
     });
@@ -36,5 +37,9 @@ export class NavComponent extends AbstractComponent {
 
   burgerClick () {
     throw new Error('Method not implemented.');
+  }
+
+  themeToggle () {
+    this.themeService.currentMode === 'darkmode' ? this.themeService.setTheme('lightmode') : this.themeService.setTheme('darkmode');
   }
 }

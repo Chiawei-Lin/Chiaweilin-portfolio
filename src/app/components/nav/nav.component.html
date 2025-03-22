@@ -28,9 +28,14 @@
                         {{translateService.currentLang === 'en' ? '中' : 'En'}}
                     </a>
                 </li>
+                <li>
+                    <a role="button" (click)="themeToggle()">
+                        {{themeService.currentMode === 'darkmode' ? 'Lm' : 'Dm'}}
+                    </a>
+                </li>
             </ul>
 
-      <clp-burger-menu (burgerClick)="burgerClick()" [(toggled)]="mobileMenuToggled"/>
+            <clp-burger-menu (burgerClick)="burgerClick()" [(toggled)]="mobileMenuToggled" />
         </div>
     </div>
 </nav>

@@ -17,4 +17,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    transition-property: color, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
 }

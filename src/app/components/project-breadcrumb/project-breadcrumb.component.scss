@@ -3,10 +3,12 @@ a {
 
   &.selected {
     cursor: default;
+    color:var(--custom-primary);
   }
 
   &:not(.selected) {
     opacity: .6;
+    color: var(--bs-body-color);
 
     font-size: 16px;
 

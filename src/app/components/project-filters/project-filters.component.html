@@ -2,37 +2,37 @@
     <ul>
         <li>
             <a role="button" (click)="filter('all')" [ngClass]="{'selected': selectedFilter === 'all'}">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('ALL') | translate}}
             </a>
         </li>
         <li>
             <a role="button" (click)="filter(categoryTypes.MotionGraphics)" [ngClass]="{'selected': selectedFilter === categoryTypes.MotionGraphics}">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('MOTION_GRAPHICS') | translate}}
             </a>
         </li>
         <li>
             <a role="button" (click)="filter(categoryTypes.TwoDimensionalAnimations)" [ngClass]="{'selected': selectedFilter === categoryTypes.TwoDimensionalAnimations}">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('TWO_DIMENSINAL_ANIMATION') | translate}}
             </a>
         </li>
         <li>
             <a role="button" (click)="filter(categoryTypes.ThreeDimensionalAnimations)" [ngClass]="{'selected': selectedFilter === categoryTypes.ThreeDimensionalAnimations}">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('THREE_DIMENSINAL_ANIMATION') | translate}}
             </a>
         </li>
         <li>
             <a role="button" (click)="filter(categoryTypes.VideoProduction)" [ngClass]="{'selected': selectedFilter === categoryTypes.VideoProduction}">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('VIDEO_PRODUCTION') | translate}}
             </a>
         </li>
         <li>
             <a role="button" (click)="filter(categoryTypes.ClientWork)" [ngClass]="{'selected': selectedFilter === categoryTypes.ClientWork}">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('CLIENT_WORK') | translate}}
             </a>
         </li>
@@ -45,7 +45,7 @@
         <button type="button" class="btn btn-outline-primary btn-custom" ngbDropdownToggle>
             <span>
                 <ng-container [ngSwitch]="selectedFilter">
-                    <i [ngTemplateOutlet]="dotTemplate"></i>
+                    <i class="bi bi-dot"></i>
                     <ng-container *ngSwitchCase="'all'">
                         {{translationConcat('ALL') | translate}}
                     </ng-container>
@@ -70,27 +70,27 @@
         </button>
         <div ngbDropdownMenu>
             <button ngbDropdownItem (click)="filter('all')" [ngClass]="{'selected': selectedFilter === 'all'}">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('ALL') | translate}}
             </button>
             <button ngbDropdownItem (click)="filter(categoryTypes.MotionGraphics)">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('MOTION_GRAPHICS') | translate}}
             </button>
             <button ngbDropdownItem (click)="filter(categoryTypes.TwoDimensionalAnimations)">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('TWO_DIMENSINAL_ANIMATION') | translate}}
             </button>
             <button ngbDropdownItem (click)="filter(categoryTypes.ThreeDimensionalAnimations)">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('THREE_DIMENSINAL_ANIMATION') | translate}}
             </button>
             <button ngbDropdownItem (click)="filter(categoryTypes.VideoProduction)">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('VIDEO_PRODUCTION') | translate}}
             </button>
             <button ngbDropdownItem (click)="filter(categoryTypes.ClientWork)">
-                <i [ngTemplateOutlet]="dotTemplate"></i>
+                <i class="bi bi-dot"></i>
                 {{translationConcat('CLIENT_WORK') | translate}}
             </button>
         </div>
