@@ -34,7 +34,7 @@
 
     &.project-filters-sm {
         .btn-custom {
-            background-color: #DCD7C1;
+            background-color: var(--custom-secondary-color);
             border: 0;
             color: black;
             min-width: 164px;

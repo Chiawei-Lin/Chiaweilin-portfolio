@@ -35,10 +35,6 @@ export class NavComponent extends AbstractComponent {
     this.translateService.use('zh');
   }
 
-  burgerClick () {
-    throw new Error('Method not implemented.');
-  }
-
   themeToggle () {
     this.themeService.currentMode === 'darkmode' ? this.themeService.setTheme('lightmode') : this.themeService.setTheme('darkmode');
   }
