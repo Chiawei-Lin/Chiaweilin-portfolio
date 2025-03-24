@@ -22,7 +22,7 @@
       </div>
     </div>
   </section>
-
+  
   <section>
     <div class="row m-0 flex-column">
       <div class="col">
@@ -32,13 +32,9 @@
       </div>
 
       <div class="col">
-        <p class="my-1">
-          {{project?.shortDescription?.[translateService.currentLang]}}
-        </p>
+        <p class="my-1" [innerHTML]="project?.shortDescription?.[translateService.currentLang]"></p>
 
-        <small class="d-block my-2">
-          {{project?.longDescription?.[translateService.currentLang]}}
-        </small>
+        <small class="d-block my-2" [innerHTML]="project?.longDescription?.[translateService.currentLang]"></small>
 
         @if(project?.projectMembers){
         <small class="d-block my-2">
@@ -102,9 +98,7 @@
   <section>
     <div class="row m-0">
       <div class="col">
-        <small class="d-block my-2">
-          {{project?.processDescription?.[translateService.currentLang]}}
-        </small>
+        <small class="d-block my-2" [innerHTML]="project?.processDescription?.[translateService.currentLang]"></small>
       </div>
     </div>
   </section>
