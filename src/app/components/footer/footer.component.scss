@@ -11,8 +11,20 @@ footer {
         fill: var(--bs-body-color) !important;
         stroke: var(--bs-body-color) !important;
 
-        *{
+        * {
             stroke: var(--bs-body-color) !important;
+        }
+    }
+}
+
+
+//add a media quyery for the socials
+
+@media (max-width: 768px) {
+    footer {
+        .social {
+            height: 32px;
+            width: 32px;
         }
     }
 }
