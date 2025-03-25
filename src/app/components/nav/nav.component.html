@@ -28,10 +28,8 @@
                         {{translateService.currentLang === 'en' ? '中' : 'En'}}
                     </a>
                 </li>
-                <li>
-                    <a role="button" (click)="themeToggle()">
-                        {{themeService.currentMode === 'darkmode' ? 'Lm' : 'Dm'}}
-                    </a>
+                <li class="d-flex align-items-center">
+                    <clp-theme-picker></clp-theme-picker>
                 </li>
             </ul>
 
@@ -63,9 +61,7 @@
             </a>
         </li>
         <li>
-            <a role="button" (click)="themeToggle()">
-                {{themeService.currentMode === 'darkmode' ? 'Lm' : 'Dm'}}
-            </a>
+            <clp-theme-picker></clp-theme-picker>
         </li>
     </ul>
 </div>

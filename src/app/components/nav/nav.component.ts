@@ -4,18 +4,18 @@ import { AbstractComponent } from '../../models/abstract-component.base';
 import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
 import { NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { ThemeService } from '../../services/theme.service';
+import { ThemePickerComponent } from "../theme-picker/theme-picker.component";
 
 @Component({
   selector: 'clp-nav',
-  imports: [TranslatePipe, BurgerMenuComponent, NgClass, RouterLink],
+  imports: [TranslatePipe, BurgerMenuComponent, NgClass, RouterLink, ThemePickerComponent],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
 export class NavComponent extends AbstractComponent {
   mobileMenuToggled: boolean = false;
 
-  constructor (public translateService: TranslateService, public themeService: ThemeService) {
+  constructor (public translateService: TranslateService) {
     super({
       translationPrefix: 'NAV'
     });
@@ -35,7 +35,5 @@ export class NavComponent extends AbstractComponent {
     this.translateService.use('zh');
   }
 
-  themeToggle () {
-    this.themeService.currentMode === 'darkmode' ? this.themeService.setTheme('lightmode') : this.themeService.setTheme('darkmode');
-  }
+
 }
