@@ -15,26 +15,30 @@ export class GallaryComponent {
   @Input() index: number = 0;
   @Output() indexChange: EventEmitter<number> = new EventEmitter<number>();
 
-  dismissGallary() {
+  dismissGallary () {
     this.showGallary = false;
     this.showGallaryChange.emit(this.showGallary);
   }
 
-  increaseIndex() {
+  increaseIndex () {
     if (this.urls) {
       this.index = this.index + 1 == this.urls.length ? 0 : this.index + 1;
       this.indexChange.emit(this.index);
     }
   }
 
-  decreaseIndex() {
+  decreaseIndex () {
     if (this.urls) {
       this.index = this.index - 1 == -1 ? this.urls.length - 1 : this.index - 1;
       this.indexChange.emit(this.index);
     }
   }
 
-  get currentMediaUrl() {
+  get currentMediaUrl () {
     return this.urls?.[this.index];
+  }
+
+  get showButtons () {
+    return this.urls?.length;
   }
 }

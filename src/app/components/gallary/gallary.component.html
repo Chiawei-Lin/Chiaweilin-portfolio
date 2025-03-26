@@ -1,13 +1,13 @@
 @if(showGallary){
 <div class="gallary">
-
   <div class="content">
-    <!-- <h1 class="text-white"> {{index}}</h1> -->
+    @if(showButtons){
     <button class="btn text-light" (click)="decreaseIndex()">
       <h3 class="d-inline">
         <i class="bi bi-chevron-left"></i>
       </h3>
     </button>
+    }
     @if(!currentMediaUrl?.includes('www.youtube.com')){
     <img [src]="currentMediaUrl">
     }@else{
@@ -20,6 +20,8 @@
       </h3>
     </button>
   </div>
+  @if(showButtons){
   <a role="button" class="overlay" (click)="dismissGallary()"></a>
+  }
 </div>
 }
