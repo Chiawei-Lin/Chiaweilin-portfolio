@@ -1,4 +1,5 @@
 [
+
     {
         "id": 1,
         "longDescription": {
@@ -1038,7 +1039,7 @@
             "en": "ICONIQUE (Ongoing Project)",
             "zh": "ICONIQUE (Ongoing Project)"
         },
-        "mainMedia": "https://www.youtube.com/embed/NB9NwSiE_Uc?si=vDGOKRaukbyabLZV",
+        "mainMedia": "https://www.youtube.com/embed/2bGFy7Fuq5U?si=_3Ne66XVtbum-xaU",
         "coverImg": "images/projects/iconique/cover-img.png",
         "processDescription": {
             "en": "First, I had a discussion with the film director, Anton, to talk about the aesthetics of the show. She showed me some clips and explained how she envisioned the title sequence. The concept was to focus heavily on pink tones, Y2K aesthetics, and pop culture influences. <br><br> As you can see, the entire title sequence follows the pink-themed look. Every element in the sequence reflects key aspects of the show, ensuring the visuals align seamlessly with the narrative and overall style. <br><br> The laptop scene was the first one I modeled to present Anton with the creative style, color palette, and composition. The materials used in this scene primarily come from Redshift assets. The image displayed on the laptop screen is something I created specifically for this project; it will be replaced with actual footage from the show in the final version. <br><br> I modeled the logo using the Pen Tool in C4D, extruded it, and adjusted the points to make it look smoother. I spent a significant amount of time refining the logo's details, focusing on the curves and roundness of the text to ensure it was both visually appealing and readable.",
@@ -1065,5 +1066,40 @@
             "Illustrator"
         ],
         "categoryType": 1
+    },
+    {
+        "id": 34,
+        "longDescription": {
+            "en": "I was commissioned by Seyfarth Shaw LLP to create a series of motion graphics explaining their new online services to both new and existing clients. My role was to visualize their ideas into clear and easily understandable graphics, helping clients grasp the new offerings through engaging visuals.\n From storyboard to animation and sound design, I worked closely with the client through continuous feedback and revisions to ensure their satisfaction. \n After Effects/ Illustrator/ Audition",
+            "zh": "我受 Seyfarth Shaw LLP 委託，為他們製作一系列的動態影像，向新舊客戶說明全新的線上服務。我的工作是將他們的想法轉化為清晰且易於理解的圖像，透過引人入勝的視覺設計，幫助客戶掌握新服務的內容。\n 從分鏡設計、動畫製作到音效設計，我與客戶密切溝通，根據回饋持續調整，確保最終成果達到客戶的滿意。\n After Effects/ Illustrator/ Audition"
+        },
+        "shortDescription": {
+            "en": "Motion Graphics Designer",
+            "zh": "動態影像設計師"
+        },
+        "projectMembers": null,
+        "title": {
+            "en": "Seyfarth Shaw LLP (2025- present)",
+            "zh": "Seyfarth Shaw LLP (2025- 至今)"
+        },
+        "mainMedia": "https://www.youtube.com/embed/HV16hrh4ICs?si=BTRfh7cZaTmv3o5N",
+        "coverImg": "images/projects/seyfarth-shaw-llp/cover-img.jpg",
+        "processDescription": null,
+        "processImages": null,
+        "styleframeImages": [
+            "images/projects/seyfarth-shaw-llp/style-frame-img-1.jpg",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-2.jpg",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-3.jpg",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-4.jpg",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-5.jpg",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-6.jpg",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-7.jpg"
+        ],
+        "technologies": [
+            "After Effects",
+            "Illustrator",
+            "Audition"
+        ],
+        "categoryType": 5
     }
 ]
