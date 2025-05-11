@@ -1,5 +1,4 @@
 [
-
     {
         "id": 1,
         "longDescription": {
@@ -89,7 +88,6 @@
             "Illustrator"
         ],
         "categoryType": 1
-        
     },
     {
         "id": 4,
@@ -1083,17 +1081,16 @@
             "zh": "Seyfarth Shaw LLP (2025- 至今)"
         },
         "mainMedia": "https://www.youtube.com/embed/HV16hrh4ICs?si=BTRfh7cZaTmv3o5N",
-        "coverImg": "images/projects/seyfarth-shaw-llp/cover-img.jpg",
+        "coverImg": "images/projects/seyfarth-shaw-llp/cover-img.png",
         "processDescription": null,
         "processImages": null,
         "styleframeImages": [
-            "images/projects/seyfarth-shaw-llp/style-frame-img-1.jpg",
-            "images/projects/seyfarth-shaw-llp/style-frame-img-2.jpg",
-            "images/projects/seyfarth-shaw-llp/style-frame-img-3.jpg",
-            "images/projects/seyfarth-shaw-llp/style-frame-img-4.jpg",
-            "images/projects/seyfarth-shaw-llp/style-frame-img-5.jpg",
-            "images/projects/seyfarth-shaw-llp/style-frame-img-6.jpg",
-            "images/projects/seyfarth-shaw-llp/style-frame-img-7.jpg"
+            "images/projects/seyfarth-shaw-llp/style-frame-img-1.png",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-2.png",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-3.png",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-4.png",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-5.png",
+            "images/projects/seyfarth-shaw-llp/style-frame-img-6.png"
         ],
         "technologies": [
             "After Effects",
